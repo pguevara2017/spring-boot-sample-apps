@@ -1,0 +1,44 @@
+## YAML Template.
+---
+spring:
+    profiles:
+        active: uat
+
+database:
+    hostname: localhostyml
+    dbname: localdatabaseyml
+    username: localuseryml
+---
+ 
+spring:
+    profiles: dev
+
+database:
+    hostname: db01.dev.bdo.com.ph
+    dbname: bobdevutadmyml
+    username: bobdevyml
+    
+---
+
+spring:
+    profiles: uat
+
+database:
+    hostname: db01.uat.bdo.com.phy
+    dbname: bobuatadmyml
+    username: bobuatyml
+
+---
+
+spring:
+    profiles: prod
+
+database:
+    hostname: db01.prod.bdo.com.ph
+    dbname: bobprodadmyml
+    username: bobprodyml
+
+    
+            
+
+
